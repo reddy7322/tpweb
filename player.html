@@ -103,8 +103,8 @@
         // JW Player configuration
     const urlParams = new URLSearchParams(window.location.search);
     const channelId = urlParams.get('channel');
-    const streamUrl = `manifest.php?id=${channelId}`;
-    const licenseUrl = `lic.php?id=${channelId}`;
+    const streamUrl = `https://mtbtv.rf.gd/tata/link_keys/manifest.php?id=${channelId}`;
+    const licenseUrl = `https://mtbtv.rf.gd/tata/link_keys/getkeys.php?id=${channelId}`;
 
     fetchLicenseData(licenseUrl)
       .then(licenseData => {
